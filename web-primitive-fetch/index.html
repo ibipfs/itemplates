@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web-primitive@itemplates</title>
+	<style type="text/css"></style>
+</head>
+<body>
+	<script type="text/javascript">
+		const resource = 'http://209.94.90.1/ipns/js.ipfs.io'
+
+		let headers = new Headers()
+		headers.append('Host', 'js.ipfs.io') // No effect! See [forbidden header names](https://developer.mozilla.org/en-US/docs/Glossary/Forbidden_header_name)
+
+		const options = {
+			method: 'GET',
+			headers: headers,
+			mode: 'cors'
+		}
+
+		let req = new Request(resource, options)
+
+		fetch(req)
+		.then((response) => {
+			if(!response.ok) {
+				throw new Error('Fetch erorr, status: ' + response.status)
+			}
+			return response
+		})
+		.then((response) => {
+			response
+			.text()
+			.then(txt => console.log('Response text: ' + txt))
+		})
+		.catch(err => console.error(err))
+		.finally(() => console.log('Finished fetching operation.'))
+	</script>
+</body>
+</html>
