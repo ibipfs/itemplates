@@ -7,13 +7,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>imanager@itemplates</title>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="mdb-jquery/fontawesome/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="mdb-jquery/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="mdb-jquery/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="mdb-jquery/css/style.min.css" rel="stylesheet">
   <link rel="icon" href="img/fav.png">
   <style>
     .map-container{
@@ -36,20 +36,16 @@
 
   <!--Main Navigation-->
   <header>
-
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
       <div class="container-fluid">
-
         <!-- Collapse -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
           <!-- Left -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -64,136 +60,103 @@
               <a class="nav-link waves-effect" href="#">Tab</a>
             </li>
           </ul>
-
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-              <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+              <a href="https://www.facebook.com/itemplates-imanager" class="nav-link waves-effect" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+              <a href="https://twitter.com/itemplates-imanager" class="nav-link waves-effect" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
+              <a href="https://github.com/snspace/itemplates" class="nav-link border border-light rounded waves-effect"
                 target="_blank">
                 <i class="fab fa-github mr-2"></i>
               </a>
             </li>
           </ul>
-
         </div>
-
       </div>
     </nav>
     <!-- Navbar -->
-
     <!-- Sidebar -->
     <div class="sidebar-fixed position-fixed">
       <a class="logo-wrapper waves-effect">
         <img src="img/fav.png" class="img-fluid" alt="">
       </a>
-
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item active waves-effect">
-          <i class="fas fa-chart-pie mr-3"></i>Dashboard
+          <i class="fas fa-chart-pie mr-3"></i>iDashboard
         </a>
         <a href="#" class="list-group-item list-group-item-action waves-effect">
-          <i class="fas fa-user mr-3"></i>Profile</a>
+          <i class="fas fa-user mr-3"></i>
+          iProfile
+        </a>
         <a href="#" class="list-group-item list-group-item-action waves-effect">
-          <i class="fas fa-table mr-3"></i>Tables</a>
-        <a href="#" class="list-group-item list-group-item-action waves-effect">
-          <i class="fas fa-map mr-3"></i>Maps</a>
-        <a href="#" class="list-group-item list-group-item-action waves-effect">
-          <i class="fas fa-money-bill-alt mr-3"></i>Orders</a>
+          <i class="fas fa-table mr-3"></i>
+          iFiles
+        </a>
       </div>
-
     </div>
     <!-- Sidebar -->
-
   </header>
   <!--Main Navigation-->
-
   <!--Main layout-->
   <main class="pt-5 mx-lg-5">
     <div class="container-fluid mt-5">
-
       <!-- Heading -->
       <div class="card mb-4 wow fadeIn">
-
         <!--Card content-->
         <div class="card-body d-sm-flex justify-content-between">
-
-          <h4 class="mb-2 mb-sm-0 pt-1">
+          <h3 class="mb-2 mb-sm-0 pt-1">
             <span>SEARCH</span>
-          </h4>
-
+          </h3>
           <form class="d-flex justify-content-center">
             <!-- Default input -->
             <input type="search" placeholder="Type your query" aria-label="Search" class="form-control">
             <button class="btn btn-primary btn-sm my-0 p" type="submit">
               <i class="fas fa-search"></i>
             </button>
-
           </form>
-
         </div>
-
       </div>
       <!-- Heading -->
-
       <!--Grid row-->
       <div class="row wow fadeIn">
-
         <!--Grid column-->
         <div class="col-md-9 mb-4">
-
           <!--Card-->
           <div class="card">
-
             <!--Card content-->
             <div class="card-body">
-
               <canvas id="myChart"></canvas>
-
             </div>
-
           </div>
           <!--/.Card-->
-
         </div>
         <!--Grid column-->
-
         <!--Grid column-->
         <div class="col-md-3 mb-4">
-
           <!--Card-->
           <div class="card mb-4">
-
             <!-- Card header -->
             <div class="card-header text-center">
               Pie chart
             </div>
-
             <!--Card content-->
             <div class="card-body">
-
               <canvas id="pieChart"></canvas>
-
             </div>
-
           </div>
           <!--/.Card-->
-
           <!--Card-->
           <div class="card mb-4">
-
             <!--Card content-->
             <div class="card-body">
-
               <!-- List group links -->
               <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action waves-effect">Sales
@@ -217,79 +180,61 @@
                 </a>
               </div>
               <!-- List group links -->
-
             </div>
-
           </div>
           <!--/.Card-->
-
         </div>
         <!--Grid column-->
-
       </div>
       <!--Grid row-->
     </div>
   </main>
   <!--Main layout-->
-
   <!--Footer-->
   <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
-
     <hr class="my-4">
-
     <!-- Social icons -->
     <div class="pb-4">
       <a href="https://www.facebook.com/itemplates-imanager" target="_blank">
         <i class="fab fa-facebook-f mr-3"></i>
       </a>
-
       <a href="https://twitter.com/itemplates-imanager" target="_blank">
         <i class="fab fa-twitter mr-3"></i>
       </a>
-
       <a href="https://dribbble.com/itemplates-imanager" target="_blank">
         <i class="fab fa-dribbble mr-3"></i>
       </a>
-
       <a href="https://pinterest.com/itemplates-imanager" target="_blank">
         <i class="fab fa-pinterest mr-3"></i>
       </a>
-
       <a href="https://github.com/snspace/itemplates" target="_blank">
         <i class="fab fa-github mr-3"></i>
       </a>
-
       <a href="http://codepen.io/itemplates-imanager/" target="_blank">
         <i class="fab fa-codepen mr-3"></i>
       </a>
     </div>
     <!-- Social icons -->
-
     <!--Copyright-->
     <div class="footer-copyright py-3">Copyright:
-      <a href="#" target="_blank"> imanager </a>
+      <a href="#" target="_blank"> itemplates </a>
     </div>
     <!--/.Copyright-->
-
   </footer>
   <!--/.Footer-->
-
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="mdb-jquery/js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="mdb-jquery/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="mdb-jquery/js/mdb.min.js"></script>
+  <script type="text/javascript" src="i/ibipfs.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-
   </script>
-
   <!-- Charts -->
   <script>
     // Line
@@ -350,5 +295,4 @@
     });
   </script>
 </body>
-
 </html>
