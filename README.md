@@ -1,6 +1,8 @@
-# Templates for IPFS
+# Templates with IBIPFS
 
 ### Features
 
-- IBIPFS: the distributed web in browser.
-- mdb-jquery-ibipfs
+- i: Getting into IPFS and Opening for Evolving
+- IBIPFS: the distributed web in browser
+- mdb-jquery: Material Design Bootstrp JQuery Template with IBIPFS
+- imanager: Start managing `*` with the IBIPFS

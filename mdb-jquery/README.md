@@ -1,1 +1,1 @@
-# Material Design Bootstrp JQuery Template with the `ibipfs`
+# Material Design Bootstrp JQuery Template with IBIPFS

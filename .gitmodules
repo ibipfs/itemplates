@@ -1,6 +1,3 @@
 [submodule "ibipfs"]
 	path = ibipfs
 	url = https://github.com/snspace/ibipfs.git
-[submodule "mdb-jquery"]
-	path = mdb-jquery
-	url = ./mdb-jquery
