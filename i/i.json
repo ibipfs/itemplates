@@ -1,20 +1,15 @@
 {
 	"name": "i",
-	"description": "Getting into IPFS and Opening for Evolving.",
+	"description": "Getting into IPFS and Opening for Evolving",
 	"form": {
 		"src": {
 			"html": {
 				"index": "index.html"
-			},
-			"css": {
-				"codemirror": "codemirror.css"
-			},
-			"js": {
-				"codemirror": "codemirror.js",
-				"ibipfs": "ibipfs.js",
-				"ipfs": "ipfs.min.js"
 			}
 		},
-		"reliance": {}
+		"reliance": {
+			"ibipfs": "/ipfs/Qmbod38fEfMtF8udMvqDww7TgBoSEtrnWnj9cahtPYHeC7",
+			"itemplates": "/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G"
+		}
 	}
 }
