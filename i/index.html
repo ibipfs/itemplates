@@ -3,14 +3,9 @@
 <head>
   <title>i: Getting into IPFS and Opening for Evolving</title>
   <link rel="icon" href="https://service.edening.net/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/fav.png">
-  <!-- <style>
-    .CodeMirror {border-top: 1px solid #eee; border-bottom: 1px solid #eee; line-height: 1.3; height: 96%; width: 100%}
-    .CodeMirror-linenumbers { padding: 0 8px; }
-  </style> -->
 </head>
 <body>
-  <textarea id="src" cols="50" rows="50"></textarea>
-	<!-- <article id="src"></article> -->
+	<article id="src"></article>
   <button onclick="iEvolve()">iEvolve</button>
   <script type="text/javascript">
     let ibipfs
@@ -47,18 +42,18 @@
         // Here we actually invoke Fallback JS to retrieve the following libraries for the page.
         fallback.load({
           // Include your stylesheets, this can be an array of stylesheets or a string!
-          /*global_css: [
-            'https://service.edening.net/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.css',
+          global_css: [
+            'https://service.edening.net/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.css'/*,
             'https://ipfs.io/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.css',
-            'https://gateway.pinata.cloud/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.css'
-          ],*/
+            'https://gateway.pinata.cloud/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.css'*/
+          ],
 
           // JavaScript library. THE KEY MUST BE THE LIBRARIES WINDOW VARIABLE!
-          /*CodeMirror: [
+          CodeMirror: [
             'https://service.edening.net/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.js',
             'https://ipfs.io/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.js',
             'https://gateway.pinata.cloud/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.js'
-          ],*/
+          ],
 
           ibipfs: [
             'https://service.edening.net/ipfs/Qmbod38fEfMtF8udMvqDww7TgBoSEtrnWnj9cahtPYHeC7/ibipfs.js'
@@ -75,8 +70,12 @@
 
         fallback.ready(function() {
           // All of my libraries have finished loading!
-          console.log('All ready!')
           // Execute my code that applies to all of my libraries here!
+          console.log('All ready!')
+
+          const styleElem = document.createElement('style')
+          styleElem.innerHTML = '.CodeMirror {border-top: 1px solid #eee; border-bottom: 1px solid #eee; line-height: 1.3; height: 96%; width: 100%} .CodeMirror-linenumbers { padding: 0 8px; }'
+          document.head.append(styleElem)
         });
 
         /*// Here we actually invoke Fallback JS to retrieve the following libraries for the page.
@@ -156,9 +155,8 @@
   			.then(res => {
           ibipfs
           .cat(res[0].hash)
-          .then(buf => {     
-            document.querySelector('#src').value = buf.toString()     
-            /*editor = CodeMirror(document.getElementById('src'), {
+          .then(buf => {          
+            editor = CodeMirror(document.getElementById('src'), {
                 value: buf.toString(),
                 lineNumbers: true,
                 mode: "javascript",
@@ -166,7 +164,7 @@
                 matchBrackets: true,
                 showCursorWhenSelecting: true,
                 tabSize: 2
-              })*/
+              })
           })
   			})
   			.catch(err => console.log('Error: ' + err))
