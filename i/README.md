@@ -2,7 +2,9 @@
 
 ### Forwarding
 
-:doing: `Local Offline First`
+:doing:
+`Local Offline First`
+- `fallback.js`
 
 :done:
 
