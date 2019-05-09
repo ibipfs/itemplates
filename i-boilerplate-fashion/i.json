@@ -1,0 +1,15 @@
+{
+	"name": "i-boilerplate-fashion",
+	"description": "Boilerplate with Fashion",
+	"form": {
+		"src": {
+			"html": {
+				"index": "index.html"
+			}
+		},
+		"reliance": {
+			"ibipfs": "/ipfs/Qmdkv8RUBFeUaxWpntYV6hLJgChmcivm4hV87jHEBKSZxR/ibipfs.js",
+			"codemirror": "/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/i/codemirror.js"
+		}
+	}
+}
