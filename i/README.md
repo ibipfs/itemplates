@@ -1,4 +1,4 @@
-# i: Getting into IPFS and Opening for Evolving - The Protocol `i` - The Template `i`
+# i: Getting into IPFS and Opening for Evolving
 
 ### Forwarding
 
