@@ -23,17 +23,18 @@
         let decision = confirm('Evolved! Would you like to have a look? :)')
 
         if (decision) {
-          ibipfs
-          .cat(res[0].hash, (err, file) => {
-            if (err) {
-              console.log('Error: ' + err)
-              
-              return
-            }
+          if (window.navigator.onLine) {
+            let url = window.location.href
 
-            alert('Evolved @ /ipfs/' + res[0].hash + ': ' + file.toString())
-            document.getElementById('src').value = file.toString()
-          })
+            url = url.slice(0, url.lastIndexOf('/ipfs/')) + '/ipfs/' + res[0].hash
+
+            window.open(url)
+          } else {
+            ibipfs
+            .cat(res[0].hash)
+            .then(file => alert('Evolved @ /ipfs/' + res[0].hash + ': ' + file.toString()))
+            .catch(err => console.log('Error: ' + err))
+          }
         } else {
           alert('Evolved @ /ipfs/' + res[0].hash)
         }
