@@ -1,15 +1,15 @@
 {
 	"name": "i",
-	"description": "Getting into IPFS and Opening for Evolving",
+	"description": "Getting into IPFS and Opening for Evolving - The Protocol `i` - The Template `i`",
 	"form": {
+		"def": "this -> i.json",
 		"src": {
 			"html": {
 				"index": "index.html"
 			}
 		},
 		"reliance": {
-			"ibipfs": "/ipfs/Qmbod38fEfMtF8udMvqDww7TgBoSEtrnWnj9cahtPYHeC7",
-			"itemplates": "/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G"
+			"ibipfs": "/ipfs/Qmdkv8RUBFeUaxWpntYV6hLJgChmcivm4hV87jHEBKSZxR/ibipfs.js"
 		}
 	}
 }
